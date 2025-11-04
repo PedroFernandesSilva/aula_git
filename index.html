@@ -1,41 +1,138 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Git + HTML + CSS</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dragon Ball Mini Wiki</title>
 
-    <link rel="stylesheet" href="..\css\site.css">
+  <link rel="stylesheet" href="../css/site.css">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous" defer></script>
 
+  <style>
+
+  </style>
 </head>
-<body class="body">
-    <div class="container">
-        <header class="d-flex flex-warp justify-content-center py-3 mb-4 border-bottom">
-            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-                <img src="..\img\goku_potara.png" alt="Goku Potara" class="bi me-2" width="40" height="52" aria-hidden="true">
-                <span class="fs-4">Personagens de Dragon Ball</span>
-            </a>
-            <ul class="nav nav-pills">
-                <li class="nav-item">
-                    <a href="#" class="nav-link active" aria-current="page">Início</a>
+<body class="body d-flex">
+
+
+  <div class="sidebar col-12 col-sm-3 col-lg-2">
+    <a href="#"> Início</a>
+    <a href="#"> Personagens</a>
+    <a href="#"> Categorias</a>
+    <a href="#"> Sagas</a>
+    <a href="#"> Técnicas</a>
+  </div>
+
+
+  <div class="flex-grow-1">
+
+    <header class="container py-3 mb-4">
+      <div class="d-flex flex-wrap align-items-center justify-content-between">
+        <a href="/" class="d-flex align-items-center text-decoration-none">
+          <img src="../img/goku_potara.png" alt="Goku Potara" width="90" height="102">
+          <span class="fs-4 ms-2" style="color: #ffffff;">Dragon Ball</span>
+        </a>
+
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid px-0">
+            <a class="navbar-brand" href="#">Início</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+              aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="#" style="color: #ffffff;">Personagens</a></li>
+                <li class="nav-item"><a class="nav-link" href="#" style="color: #ffffff;">Categorias</a></li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #ffffff;">Sagas</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
                 </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Sobre</a>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #ffffff;">Técnicas</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
                 </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Contato</a>
-                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container mb-5">
+      <div class="row g-4">
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="card h-100">
+            <img src="../img/gohan_goku.jpg" class="card-img-bottom" alt="Gohan e Goku">
+            <div class="card-body">
+              <h5 class="card-title text-center">Gohan e Goku</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">An item</li>
+              <li class="list-group-item">A second item</li>
+              <li class="list-group-item">A third item</li>
             </ul>
-            <div class="b-example-divider"></div>
-        </header>
-    </div>
-       
-    <main>
-        
+            <div class="card-body">
+              <a href="#" class="card-link">Card link</a>
+              <a href="#" class="card-link">Another link</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="card h-100">
+            <img src="..\img\db_tournment.jpg" alt="Gohan e Goku">
+            <div class="card-body">
+              <h5 class="card-title text-center">Dragon Ball Saga</h5>
+              <p class="card-text">Texto de exemplo para o segundo card.</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">An item</li>
+              <li class="list-group-item">A second item</li>
+              <li class="list-group-item">A third item</li>
+            </ul>
+            <div class="card-body">
+              <a href="#" class="card-link">Card link</a>
+              <a href="#" class="card-link">Another link</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="card h-100">
+            <img src="..\img\goku_kid.jpg" class="card-img-top" alt="Gohan e Goku">
+            <div class="card-body">
+              <h5 class="card-title text-center">Gohan e Goku</h5>
+              <p class="card-text">Terceiro card.</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">An item</li>
+              <li class="list-group-item">A second item</li>
+              <li class="list-group-item">A third item</li>
+            </ul>
+            <div class="card-body">
+              <a href="#" class="card-link">Card link</a>
+              <a href="#" class="card-link">Another link</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
     </main>
+  </div>
+
 </body>
 </html>
-
