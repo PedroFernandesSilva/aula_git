@@ -1,24 +1,161 @@
-.body {
-    background-color: rgb(0, 0, 0);
+
+    .body {
+      background-image: url('../img/kame_house.webp');
+      background-size: cover;
+      display: flex;
+      min-height: 100vh;
+      flex-direction: column;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+    }
+
+    .global-navbar {
+      grid-row-gap: 6px;
+    }
+
+    .sidebar {
+      width: 280px;
+      height: 100vh;
+      background-color: #0d679791;
+      border-right: #ff8383 2px solid;
+      
+    }
+
+    .content-area {
+      flex-grow: 1;
+      padding: 30px;
+    }
+
+    .search-bar {
+      background-color: #c422bcc1;
+      padding: 10px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+
+    .btn-toggle-nav a:hover, .btn-toggle-nav a:focus {
+      background-color: #ff8383;
+      text-decoration-color: #1a1a1a !important;
+      color: #040404 !important;
 }
 
-    .body .sidebar {
-      background-color: #1a1a1a;
-      min-height: 100vh;
-      padding-top: 20px;
-    }
-    .body .sidebar a {
-      color: #fff;
-      padding: 10px 15px;
+    .img-page {
       display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+      block-size: auto;
+    }
+
+    .page {
+      color: #ffffff;
+      border-radius: 3px;
+      min-height: 480px;
+      padding: 24px 36px;
+      position: relative;
+    }
+
+    .page_main {
+      background-color: #0d6797a6;
+      border-radius: 200px;
+      border: #ff8383 5px solid;
+      box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+      color: #ffffff;
+      min-height: 480px;
+      padding: 24px 36px;
+      position: relative;
+    }
+
+    .page .page_main {
+      height: 100%;
+    }
+
+    .table {
+      align-content: center;
+    }
+
+    #home-menu a {
+      background: rgba(0, 0, 0, 0) linear-gradient(to bottom,#ff8383,#c422bcc1 70%) repeat scroll 0 0;
+      border: 1px solid #ffffff;
+      border-radius: 5px;
+      color: #eee;
+      display: block;
+      font-weight: bold;
+      line-height: 40px;
+      text-align: center;
+      text-transform: uppercase;
+      width: 125px;
+    }
+
+    .rightbar {
+      gap: 12px;
+      align-items: stretch;
+      background-color: #0d6797;
+      border: 1px solid #ff8383;
+      box-sizing: border-box;
+      display: flex;
+      flex-basis: auto;
+      flex-direction: column;
+      flex-shrink: 0;
+      list-style: none;
+      margin: 010px;
+      min-height: 0px;
+      min-width: 0px;
+      padding: 0px;
+      position: relative;
+      text-decoration: none;
+      z-index: 0;
+      width: 300px;
+      height: 300px;
+      padding-left: 16px;
+      padding-right: 16px;
+      padding-bottom: 12px;
+      padding-top: 12px;
+      align-items: flex-start;
+      border-radius: 8px;
+    }
+
+    .rightbar:hover {
+      box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .background-img {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;    
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.3;
+      z-index: -1;
+    }
+
+    .info-section {
+      position: relative;
+      z-index: 1;
+    }
+
+    .info-section h6 {
+      margin-bottom: 8px;
+      color: #ffffff; 
+      text-align: center;
+      border-bottom: white 1px solid;
+    }
+
+    .info-section a {
+      color: #ffffff; 
+      font-size: 14px; 
       text-decoration: none;
     }
-    .body .sidebar a:hover {
-      background-color: #343a40;
+
+    @media screen {
+      .sidebar {
+        position: fixed;
+        left: 0;
+        top: 0;
+      }
+
+      .content-area {
+        margin-left: 280px;
+      }
     }
-    .body .card-img-top {
-      height: 180px;
-      object-fit: cover;
-    }
-    .body .card.h-100 { display: flex; flex-direction: column; }
-    .body .card .card-body { flex: 1 0 auto; }

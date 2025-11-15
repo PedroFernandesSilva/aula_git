@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dragon Ball Mini Wiki</title>
+
+  <link rel="stylesheet" href="../css/site.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous" defer></script>
+</head>
+<body class="body">
+  <main class="d-flex flex-nowrap">
+
+    <!-- Sidebar Esquerda -->
+    <div class="sidebar d-flex flex-column flex-shrink-0 p-3 ">
+      <a href="index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+        <img src="../img/kanji_go_icon.png" alt="Goku Potara" width="40" height="40" class="me-2 rounded-circle border border-light">
+        <span class="fs-4">Dragon Ball Wiki</span>
+      </a>
+      <hr>
+      <ul class="nav nav-pills flex-column mb-auto btn-toggle-nav">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link text-white d-flex align-items-center" aria-current="page">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house me-2" viewBox="0 0 16 16">
+              <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z"/>
+            </svg>
+            Home
+          </a>
+        </li>
+        <li>
+          <a href="character.html" class="nav-link text-white">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-people-fill me-2" viewBox="0 0 16 16">
+            <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>  
+          </svg>
+          Personagens
+          </a>
+        </li>
+        <li>
+          <a href="#" class="nav-link text-white">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tv-fill me-2" viewBox="0 0 16 16">
+            <path d="M2.5 13.5A1.5 1.5 0 0 1 1 12V3a1.5 1.5 0 0 1 1.5-1.5h11A1.5 1.5 0 0 1 14 3v9a1.5 1.5 0 0 1-1.5 1.5h-11zm11-10H2.5a.5.5 0 0 0-.5.5v7.793l4.146-4.147a.5.5 0 0 1 .708 0l3.646 3.647 2.646-2.647a.5.5 0 0 0-.354-.853zM11.01 1a.5.5 0 0 1 .374.832L10.707 3h2.543a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.374-.832L11.293 2H8.75a.5.5 0 0 1 0-1h2.26z"/>
+          </svg>
+            Séries
+          </a>
+        </li>
+        <li>
+          <a href="#" class="nav-link text-white">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-film me-2" viewBox="0 0 16 16">
+            <path d="M0 1a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V1zm2 1v2h2V2H2zm3 0v2h2V2H5zm3 0v2h2V2H8zm3 0v2h2V2h-2zM2 5v2h2V5H2zm3 0v2h2V5H5zm3 0v2h2V5H8zm3 0v2h2V5h-2zM2 9v2h2V9H2zm3 0v2h2V9H5zm3 0v2h2V9H8zm3 0v2h2V9h-2zM2 13v2h2v-2H2zm3 0v2h2v-2H5zm3 0v2h2v-2H8zm3 0v2h2v-2h-2z"/>
+          </svg>
+            Filmes
+          </a>
+        </li>
+        <li>
+          <a href="#" class="nav-link text-white">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-controller me-2" viewBox="0 0 16 16">
+            <path d="M11.5 5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0v-1a.5.5 0 0 1 .5-.5zM14 8a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1 0-1h1A.5.5 0 0 1 14 8zm-9.5-.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0v-1a.5.5 0 0 1 .5-.5zM5 5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0v-1A.5.5 0 0 1 5 5z"/>
+            <path d="M4.406 1.342A2.5 2.5 0 0 0 2.343 3.5L1.5 6v5.5A2.5 2.5 0 0 0 4 14h8a2.5 2.5 0 0 0 2.5-2.5V6l-.843-3.5a2.5 2.5 0 0 0-2.063-2.158L4.406 1.342zm-.761 1.658L4.5 3h7l.855 3H3.645l.855-3zM12 11.5a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5V7h8v4.5z"/>
+          </svg>
+            Jogos
+          </a>
+        </li>
+        <li>
+          <a href="#" class="nav-link text-white">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-down me-2" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M3.5 1.5a.5.5 0 0 1 .5.5v6.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 1 1 .708-.708L3 8.793V2a.5.5 0 0 1 .5-.5zm9 13a.5.5 0 0 0-.5-.5H11v-6.793l-1.146 1.147a.5.5 0 0 0 .708.708l2-2a.5.5 0 0 0 .708 0l2 2a.5.5 0 1 0-.708.708L13 9.207V14a.5.5 0 0 0-.5.5z"/>
+          </svg>
+            Transformações
+          </a>
+        </li>
+        <li>
+          <a href="#" class="nav-link text-white">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-patch-check-fill me-2" viewBox="0 0 16 16">
+            <path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.637.622a2.89 2.89 0 0 0 0 4.134l.638.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.637a2.89 2.89 0 0 0 4.134 0l.622-.638.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.637-.622a2.89 2.89 0 0 0 0-4.134l-.638-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.637zm-1.43 4.908a.5.5 0 0 1 .707.708L7.477 8.362l1.867 1.867a.5.5 0 0 1-.707.708l-2-2a.5.5 0 0 1 0-.708l2-2z"/>
+          </svg>
+            Raças
+          </a>
+        </li>
+        <li>
+          <a href="#" class="nav-link text-white">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-globe2 me-2" viewBox="0 0 16 16">
+            <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-6.468 4.146c.563.28 1.169.492 1.805.62C4.423 4.668 5.668 4 8 4s3.577.668 4.663 2.766c.636-.128 1.242-.34 1.805-.62A7 7 0 0 0 8 1zm5.468 6.854c-.563.28-1.169.492-1.805.62C11.577 11.332 10.332 12 8 12s-3.577-.668-4.663-2.766c-.636.128-1.242.34-1.805.62A7 7 0 0 0 8 15a7 7 0 0 0 5.468-2.146z"/>
+          </svg>
+            Sagas
+          </a>
+        </li>
+      </ul>
+      <hr>
+    </div>
+
+    <!-- Conteúdo Central -->
+
+
+    
+
+    </div>
+
+
+    <!-- Sidebar Direita -->
+    <div class="rightbar rightbar-2 rightbar-3 rightbar-4 rightbar-5 d-flex flex-column flex-shr ink-0 p-3">
+      <img class="background-img" src="../img/goku_ssj4_daima.png" alt="Goku SSJ4">
+      <h5 class="text-center mb-3" style="color: white;">Informações Extras</h5>
+      <br>
+      <div class="info-section">
+        <h6 style="color: #fe8801; text-align: center;">Curiosidade do Dia</h6>
+        <a href="" style="color: #fe8801; font-size: 14px; text-decoration: none;">Você sabia que o nosso grande protagonista Son Goku, foi basaeado na figura de Sun Wukong da mitologia chinesa?</a>
+        
+      </div>
+    
+
+  </main>
+</body>
+</html>
