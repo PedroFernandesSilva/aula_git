@@ -1,40 +1,86 @@
 
-    .body {
-      background-image: url('../img/kame_house.webp');
-      background-size: cover;
-      display: flex;
-      min-height: 100vh;
-      flex-direction: column;
-      background-attachment: fixed;
-      background-repeat: no-repeat;
+
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
     }
+
+    body {
+      font-size: 14px;
+      line-height: 1.75;
+
+      background-image: url('../img/goku_kamehameha_ssj4.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+
+
 
     .global-navbar {
       grid-row-gap: 6px;
     }
 
     .sidebar {
+      zoom: 1;
       width: 280px;
       height: 100vh;
-      background-color: #0d679791;
-      border-right: #ff8383 2px solid;
-      
+      position: fixed;
+      left: 0;
+      top: 0;
+      background: rgba(13, 103, 151, 0.75);
+      border-right: 2px solid #ff8f06;
+      font-size: 14px;
+      transform-origin: left top;
+    }
+
+    .sidebar * {
+      font-size: inherit !important;
+    }
+
+
+    .sidebar .nav-link:hover {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: #ffffff;
+      font-weight: 500;
+      padding: 10px 12px;
+      border-radius: 6px;
+      transition: all 0.25s ease-in-out;
+      background: linear-gradient(90deg, #ffea00, #ff8c00);
+      box-shadow: 0 0 15px #ffea00;
+    }
+
+    .sidebar .fs-4 {
+      font-weight: 700;
+      text-shadow: 1px 1px 4px #000;
+    }
+
+    .sidebar .nav-link.active {
+      background: #ff8383;
+      color: #000 !important;
+      font-weight: 700;
+      box-shadow: 0px 0px 10px #ff8383;
     }
 
     .content-area {
       flex-grow: 1;
       padding: 30px;
+      margin-left: 280px;
     }
 
     .search-bar {
-      background-color: #c422bcc1;
+      background-color: #ff8f06;
       padding: 10px;
       border-radius: 8px;
       margin-bottom: 20px;
     }
 
     .btn-toggle-nav a:hover, .btn-toggle-nav a:focus {
-      background-color: #ff8383;
+      background-color: #ff8f06;
       text-decoration-color: #1a1a1a !important;
       color: #040404 !important;
 }
@@ -56,26 +102,29 @@
     }
 
     .page_main {
-      background-color: #0d6797a6;
-      border-radius: 200px;
-      border: #ff8383 5px solid;
-      box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
-      color: #ffffff;
+      opacity: 0.9;
+      background-color: #cf7b0d;
+      border-radius: 3px;
       min-height: 480px;
       padding: 24px 36px;
       position: relative;
+      border: #040404 1px solid;
     }
 
     .page .page_main {
       height: 100%;
     }
 
+    *, ::after, ::before {
+  box-sizing: inherit;
+}
+
     .table {
       align-content: center;
     }
 
     #home-menu a {
-      background: rgba(0, 0, 0, 0) linear-gradient(to bottom,#ff8383,#c422bcc1 70%) repeat scroll 0 0;
+      background: rgba(0, 0, 0, 0) linear-gradient(to bottom,#8b8181,#cf7b0d 70%) repeat scroll 0 0;
       border: 1px solid #ffffff;
       border-radius: 5px;
       color: #eee;
@@ -87,37 +136,6 @@
       width: 125px;
     }
 
-    .rightbar {
-      gap: 12px;
-      align-items: stretch;
-      background-color: #0d6797;
-      border: 1px solid #ff8383;
-      box-sizing: border-box;
-      display: flex;
-      flex-basis: auto;
-      flex-direction: column;
-      flex-shrink: 0;
-      list-style: none;
-      margin: 010px;
-      min-height: 0px;
-      min-width: 0px;
-      padding: 0px;
-      position: relative;
-      text-decoration: none;
-      z-index: 0;
-      width: 300px;
-      height: 300px;
-      padding-left: 16px;
-      padding-right: 16px;
-      padding-bottom: 12px;
-      padding-top: 12px;
-      align-items: flex-start;
-      border-radius: 8px;
-    }
-
-    .rightbar:hover {
-      box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
-    }
 
     .background-img {
       position: absolute;
@@ -159,3 +177,5 @@
         margin-left: 280px;
       }
     }
+
+    
